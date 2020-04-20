@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3328F75F-BD12-40DB-A05C-AE530874D584}</ProjectGuid>
+    <RootNamespace>YGOPC</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>Library\libevent2\include;Library\irrKlang-1.5.0\include;Library\irrlicht-1.8.1\include;Library\sqlite3;Library\freetype-2.4.4\include;Library\lua-5.2.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Irrlicht.lib;irrKlang.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>Library\libevent2\include;Library\irrKlang-1.5.0\include;Library\irrlicht-1.8.1\include;Library\sqlite3;Library\freetype-2.4.4\include;Library\lua-5.2.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Irrlicht.lib;irrKlang.lib;ws2_32.lib;sqlite3.lib;libevent.lib;freetype.lib;lua52.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Visual Studio 2010\Library\lua-5.2.1\src\lua.h" />
+    <ClInclude Include="..\..\..\..\Visual Studio 2010\Library\lua-5.2.1\src\lua.hpp" />
+    <ClInclude Include="..\..\..\..\Visual Studio 2010\Library\lua-5.2.1\src\luaconf.h" />
+    <ClInclude Include="..\..\..\..\Visual Studio 2010\Library\lua-5.2.1\src\lualib.h" />
+    <ClInclude Include="gframe\bufferio.h" />
+    <ClInclude Include="gframe\CGUIButton.h" />
+    <ClInclude Include="gframe\CGUIImageButton.h" />
+    <ClInclude Include="gframe\CGUISkinSystem\CConfigMap.h" />
+    <ClInclude Include="gframe\CGUISkinSystem\CGUIProgressBar.h" />
+    <ClInclude Include="gframe\CGUISkinSystem\CGUISkinSystem.h" />
+    <ClInclude Include="gframe\CGUISkinSystem\CImageGUISkin.h" />
+    <ClInclude Include="gframe\CGUISkinSystem\clipRects.h" />
+    <ClInclude Include="gframe\CGUITTFont.h" />
+    <ClInclude Include="gframe\client_card.h" />
+    <ClInclude Include="gframe\client_field.h" />
+    <ClInclude Include="gframe\config.h" />
+    <ClInclude Include="gframe\CTimer.h" />
+    <ClInclude Include="gframe\CVideoModeList.h" />
+    <ClInclude Include="gframe\CXMLRegistry\CXMLNode.h" />
+    <ClInclude Include="gframe\CXMLRegistry\CXMLRegistry.h" />
+    <ClInclude Include="gframe\data_manager.h" />
+    <ClInclude Include="gframe\deck_con.h" />
+    <ClInclude Include="gframe\deck_manager.h" />
+    <ClInclude Include="gframe\duelclient.h" />
+    <ClInclude Include="gframe\event_handler.h" />
+    <ClInclude Include="gframe\game.h" />
+    <ClInclude Include="gframe\IImagePresenter.h" />
+    <ClInclude Include="gframe\image_manager.h" />
+    <ClInclude Include="gframe\irrUString.h" />
+    <ClInclude Include="gframe\lzma\Alloc.h" />
+    <ClInclude Include="gframe\lzma\LzFind.h" />
+    <ClInclude Include="gframe\lzma\LzHash.h" />
+    <ClInclude Include="gframe\lzma\LzmaDec.h" />
+    <ClInclude Include="gframe\lzma\LzmaEnc.h" />
+    <ClInclude Include="gframe\lzma\LzmaLib.h" />
+    <ClInclude Include="gframe\lzma\Types.h" />
+    <ClInclude Include="gframe\materials.h" />
+    <ClInclude Include="gframe\menu_handler.h" />
+    <ClInclude Include="gframe\mymutex.h" />
+    <ClInclude Include="gframe\mysignal.h" />
+    <ClInclude Include="gframe\mythread.h" />
+    <ClInclude Include="gframe\netserver.h" />
+    <ClInclude Include="gframe\network.h" />
+    <ClInclude Include="gframe\os.h" />
+    <ClInclude Include="gframe\replay.h" />
+    <ClInclude Include="gframe\replay_mode.h" />
+    <ClInclude Include="gframe\single_duel.h" />
+    <ClInclude Include="gframe\single_mode.h" />
+    <ClInclude Include="gframe\tag_duel.h" />
+    <ClInclude Include="scriptcore\card.h" />
+    <ClInclude Include="scriptcore\common.h" />
+    <ClInclude Include="scriptcore\duel.h" />
+    <ClInclude Include="scriptcore\effect.h" />
+    <ClInclude Include="scriptcore\effectset.h" />
+    <ClInclude Include="scriptcore\field.h" />
+    <ClInclude Include="scriptcore\group.h" />
+    <ClInclude Include="scriptcore\interpreter.h" />
+    <ClInclude Include="scriptcore\mtrandom.h" />
+    <ClInclude Include="scriptcore\ocgapi.h" />
+    <ClInclude Include="scriptcore\scriptlib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="gframe\cardgame.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Visual Studio 2010\Library\lua-5.2.1\src\linit.c" />
+    <ClCompile Include="..\..\..\..\Visual Studio 2010\Library\lua-5.2.1\src\liolib.c" />
+    <ClCompile Include="gframe\CGUIButton.cpp" />
+    <ClCompile Include="gframe\CGUIImageButton.cpp" />
+    <ClCompile Include="gframe\CGUISkinSystem\CConfigMap.cpp" />
+    <ClCompile Include="gframe\CGUISkinSystem\CGUIProgressBar.cpp" />
+    <ClCompile Include="gframe\CGUISkinSystem\CGUISkinSystem.cpp" />
+    <ClCompile Include="gframe\CGUISkinSystem\CImageGUISkin.cpp" />
+    <ClCompile Include="gframe\CGUITTFont.cpp" />
+    <ClCompile Include="gframe\client_card.cpp" />
+    <ClCompile Include="gframe\client_field.cpp" />
+    <ClCompile Include="gframe\CXMLRegistry\CXMLNode.cpp" />
+    <ClCompile Include="gframe\CXMLRegistry\CXMLRegistry.cpp" />
+    <ClCompile Include="gframe\data_manager.cpp" />
+    <ClCompile Include="gframe\deck_con.cpp" />
+    <ClCompile Include="gframe\deck_manager.cpp" />
+    <ClCompile Include="gframe\drawing.cpp" />
+    <ClCompile Include="gframe\duelclient.cpp" />
+    <ClCompile Include="gframe\event_handler.cpp" />
+    <ClCompile Include="gframe\game.cpp" />
+    <ClCompile Include="gframe\gframe.cpp" />
+    <ClCompile Include="gframe\image_manager.cpp" />
+    <ClCompile Include="gframe\lzma\Alloc.c" />
+    <ClCompile Include="gframe\lzma\LzFind.c" />
+    <ClCompile Include="gframe\lzma\LzmaDec.c" />
+    <ClCompile Include="gframe\lzma\LzmaEnc.c" />
+    <ClCompile Include="gframe\lzma\LzmaLib.c" />
+    <ClCompile Include="gframe\materials.cpp" />
+    <ClCompile Include="gframe\menu_handler.cpp" />
+    <ClCompile Include="gframe\netserver.cpp" />
+    <ClCompile Include="gframe\replay.cpp" />
+    <ClCompile Include="gframe\replay_mode.cpp" />
+    <ClCompile Include="gframe\single_duel.cpp" />
+    <ClCompile Include="gframe\single_mode.cpp" />
+    <ClCompile Include="gframe\tag_duel.cpp" />
+    <ClCompile Include="scriptcore\card.cpp" />
+    <ClCompile Include="scriptcore\duel.cpp" />
+    <ClCompile Include="scriptcore\effect.cpp" />
+    <ClCompile Include="scriptcore\field.cpp" />
+    <ClCompile Include="scriptcore\group.cpp" />
+    <ClCompile Include="scriptcore\interpreter.cpp" />
+    <ClCompile Include="scriptcore\libcard.cpp" />
+    <ClCompile Include="scriptcore\libdebug.cpp" />
+    <ClCompile Include="scriptcore\libduel.cpp" />
+    <ClCompile Include="scriptcore\libeffect.cpp" />
+    <ClCompile Include="scriptcore\libgroup.cpp" />
+    <ClCompile Include="scriptcore\mem.cpp" />
+    <ClCompile Include="scriptcore\ocgapi.cpp" />
+    <ClCompile Include="scriptcore\operations.cpp" />
+    <ClCompile Include="scriptcore\playerop.cpp" />
+    <ClCompile Include="scriptcore\processor.cpp" />
+    <ClCompile Include="scriptcore\scriptlib.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
