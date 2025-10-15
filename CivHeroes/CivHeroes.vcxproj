@@ -122,10 +122,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Visual Studio 2010\Library\lua-5.2.1\src\lua.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2010\Library\lua-5.2.1\src\lua.hpp" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2010\Library\lua-5.2.1\src\luaconf.h" />
-    <ClInclude Include="..\..\..\..\Visual Studio 2010\Library\lua-5.2.1\src\lualib.h" />
+    <ClInclude Include="lua\lua.h" />
+    <ClInclude Include="lua\lua.hpp" />
+    <ClInclude Include="lua\luaconf.h" />
+    <ClInclude Include="lua\lualib.h" />
     <ClInclude Include="gframe\bufferio.h" />
     <ClInclude Include="gframe\CGUIButton.h" />
     <ClInclude Include="gframe\CGUIImageButton.h" />
@@ -187,8 +187,8 @@
     <ResourceCompile Include="gframe\cardgame.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Visual Studio 2010\Library\lua-5.2.1\src\linit.c" />
-    <ClCompile Include="..\..\..\..\Visual Studio 2010\Library\lua-5.2.1\src\liolib.c" />
+    <ClCompile Include="lua\linit.c" />
+    <ClCompile Include="lua\liolib.c" />
     <ClCompile Include="gframe\CGUIButton.cpp" />
     <ClCompile Include="gframe\CGUIImageButton.cpp" />
     <ClCompile Include="gframe\CGUISkinSystem\CConfigMap.cpp" />
