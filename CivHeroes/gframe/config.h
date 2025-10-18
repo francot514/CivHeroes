@@ -46,7 +46,7 @@ inline int _wtoi(const wchar_t * s) {
 }
 #endif
 
-#include <irrlicht.h>
+#include <include/irrlicht.h>
 #ifdef __APPLE__
 #include <OpenGL/gl.h>
 #include <OpenGL/glu.h>
