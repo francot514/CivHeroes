@@ -126,6 +126,7 @@
     <ClInclude Include="lua\lua.hpp" />
     <ClInclude Include="lua\luaconf.h" />
     <ClInclude Include="lua\lualib.h" />
+    <ClInclude Include="include\irrlicht.h" />
     <ClInclude Include="gframe\bufferio.h" />
     <ClInclude Include="gframe\CGUIButton.h" />
     <ClInclude Include="gframe\CGUIImageButton.h" />
