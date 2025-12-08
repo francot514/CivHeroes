@@ -74,7 +74,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>Library\libevent2\include;Library\irrKlang-1.5.0\include;Library\irrlicht-1.8.1\include;Library\sqlite3;Library\freetype-2.4.4\include;Library\lua-5.2.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;Library\libevent2\include;Library\irrKlang-1.5.0\include;Library\irrlicht-1.8.1\include;Library\sqlite3;Library\freetype-2.4.4\include;Library\lua-5.2.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
@@ -97,7 +97,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>Library\libevent2\include;Library\irrKlang-1.5.0\include;Library\irrlicht-1.8.1\include;Library\sqlite3;Library\freetype-2.4.4\include;Library\lua-5.2.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;Library\libevent2\include;Library\irrKlang-1.5.0\include;Library\irrlicht-1.8.1\include;Library\sqlite3;Library\freetype-2.4.4\include;Library\lua-5.2.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
