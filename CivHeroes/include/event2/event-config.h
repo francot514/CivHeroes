@@ -20,6 +20,9 @@
 
 /* Define if clock_gettime is available in libc */
 /* #undef _EVENT_DNS_USE_CPU_CLOCK_FOR_ID */
+#ifndef SIZE_MAX
+#define SIZE_MAX ((size_t)-1)
+#endif
 
 /* Define is no secure id variant is available */
 /* #define _EVENT_DNS_USE_GETTIMEOFDAY_FOR_ID 1 */
