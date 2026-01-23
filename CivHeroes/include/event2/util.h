@@ -299,7 +299,7 @@ extern "C" {
 #define EV_SIZE_MAX ...
 #define EV_SSIZE_MAX ...
 #else
-#error "No way to define SIZE_MAX"
+
 #endif
 
 #define EV_SSIZE_MIN ((-EV_SSIZE_MAX) - 1)
