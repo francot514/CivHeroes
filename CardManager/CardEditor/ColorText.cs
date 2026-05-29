@@ -103,9 +103,9 @@
                     }
                     catch (Exception exception)
                     {
-                        Console.WriteLine(exception.ToString());
+                        //Console.WriteLine(exception.ToString());
                         MessageBox.Show(exception.ToString());
-                        continue;
+                        //continue;
                     }
                 }
             }
