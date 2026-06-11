@@ -943,11 +943,11 @@ int bufferevent_set_max_single_write(struct bufferevent *bev, size_t size);
 
 /** Get the current size limit for single read operation. */
 EVENT2_EXPORT_SYMBOL
-ev_ssize_t bufferevent_get_max_single_read(struct bufferevent *bev);
+int bufferevent_get_max_single_read(struct bufferevent *bev);
 
 /** Get the current size limit for single write operation. */
 EVENT2_EXPORT_SYMBOL
-ev_ssize_t bufferevent_get_max_single_write(struct bufferevent *bev);
+int bufferevent_get_max_single_write(struct bufferevent *bev);
 
 /**
    @name Rate limit inspection
